@@ -261,15 +261,16 @@
 
 <!-- NAV -->
 <nav>
-  <!-- FIX 4: Logo image — file must be named FULL_WORBS_LOGO_BOLD1.jpg in same folder -->
-  <div class="nav-logo" onclick="resetShop()">
-    <img src="FULL_WORBS_LOGO_BOLD.jpg" alt="WORBS Beauty"
+  <!-- FIX 4: Logo image — file must be named FULL_WORBS_LOGO_BOLD.jpg in same folder -->
+<div class="nav-logo" onclick="resetShop()">
+    <img src="images/FULL%20WORBS%20LOGO%20BOLD.jpg" alt="WORBS Beauty"
          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
     <span class="nav-logo-text" style="display:none;">W O R B S</span>
   </div>
   <ul class="nav-links">
     <li><a onclick="showPage('home')">Home</a></li>
-    <!-- FIX 3: Shop nav link now calls resetShop() to always show all products -->
+    
+    <!-- Shop nav link now calls resetShop() to always show all products -->
     <li><a onclick="resetShop()">Shop</a></li>
     <li><a onclick="showPage('about')">About</a></li>
     <li><a onclick="showPage('blog')">Journal</a></li>
