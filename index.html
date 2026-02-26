@@ -800,8 +800,8 @@ function renderProductCard(p) {
 
 function renderBlogCard(b) {
   const imgHTML = b.image
-    ? `<img src="${b.image}" alt="${b.title}" onerror="this.innerHTML='${b.emoji || '🍒'}';">`
-    : (b.emoji || '🍒');
+    ? `<img src="${b.image}" alt="${b.title}" onerror="this.outerHTML='<span style=\\'font-size:2rem\\'>${b.emoji || '🍒'}</span>';">`
+    : `<span style="font-size:2rem">${b.emoji || '🍒'}</span>`;
   return `
     <div class="blog-card">
       <div class="blog-img">${imgHTML}</div>
