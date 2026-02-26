@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>W O R B S Beauty</title>
+<title>W O R B S</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -263,7 +263,7 @@
 <nav>
   <!-- FIX 4: Logo image — file must be named FULL_WORBS_LOGO_BOLD1.jpg in same folder -->
   <div class="nav-logo" onclick="resetShop()">
-    <img src="FULL_WORBS_LOGO_BOLD1.jpg" alt="WORBS Beauty"
+    <img src="FULL_WORBS_LOGO_BOLD.jpg" alt="WORBS Beauty"
          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
     <span class="nav-logo-text" style="display:none;">W O R B S</span>
   </div>
@@ -286,9 +286,6 @@
   <section class="hero">
     <div class="hero-text">
       <p class="hero-tag">Clean Beauty · Conscious Care</p>
-      <!-- FIX 1: The "W O R B S" brand name div that was here has been REMOVED -->
-      <!-- The corruption was a JS template literal accidentally injected into the CSS :root block -->
-      <!-- which broke --text, --muted, --border variables, causing phantom renders -->
       <p class="hero-title">Beauty that feels as good as it <em>looks.</em></p>
       <p class="hero-sub">Thoughtfully formulated lip care designed for maximum impact. No compromise on purity or performance.</p>
       <div>
@@ -298,7 +295,7 @@
     </div>
     <div class="hero-image">
       <div class="hero-img-inner">
-        <img src="images/hero-image.jpg" alt="W O R B S Beauty">
+        <img src="images/hero.jpg" alt="W O R B S Beauty">
       </div>
       <div class="hero-floater">
         <strong>Sweet Talk Collection</strong>
@@ -309,7 +306,7 @@
 
   <div class="marquee-strip">
     <div class="marquee-inner">
-      <span>Clean Ingredients</span><span>Dermatologist Tested</span><span>Cruelty Free</span>
+      <span>Clean Ingredients</span><span>Tested</span><span>Cruelty Free</span>
       <span>Made for All</span><span>5% Discount on Bundle Orders</span>
       <span>You'll Take It Everywhere</span><span>Sustainable Packaging</span><span>Rooted in Accra</span>
       <span>Clean Ingredients</span><span>Dermatologist Tested</span><span>Cruelty Free</span>
@@ -319,8 +316,7 @@
   </div>
 
   <section class="section">
-    <!-- FIX 2: "Bestsellers" section-label removed. Section title kept. -->
-    <h2 class="section-title">Shop the Lip Look</h2>
+    <h2 class="section-title">Shop your faves</h2>
     <div class="product-grid" id="home-products"></div>
     <div style="text-align:center; margin-top:56px;">
       <button class="btn-primary" onclick="resetShop()">View All Products</button>
@@ -367,11 +363,11 @@
     <div class="about-content">
       <p class="section-label">Our Story</p>
       <h2 class="section-title" style="margin-bottom:24px;">Built by Us,<br>For Us.</h2>
-      <p>W O R B S Beauty is a collective mission born in Ghana. We believe beauty shouldn't be a mystery or a luxury — it should be a shared standard of care. Our community is our compass, guiding every formula we develop to ensure YOU are never an afterthought in your beauty journey.</p>
+      <p>W O R B S Beauty is a collective mission born in Ghana. We believe beauty shouldn't be a luxury, but a shared standard of care. Our community is our compass, guiding every formula we develop to ensure YOU are never an afterthought in your beauty journey.</p>
       <p>Our philosophy is <strong>Clean. Intentional. Essential.</strong> We strip away the noise to focus on high-depth, sustainable ingredients that respect both your skin and our planet.</p>
       <h3>The WB Loop: Our Circular Commitment</h3>
       <p>We are honest about our footprint. Return your used WB tubes to us, and we'll reward your commitment with <strong>3% cashback on your next purchase</strong>. These materials are then diverted to certified plastic processing partners to offset our primary footprint.</p>
-      <p>From our paper-base bags to our biodegradable mailers, we ensure every order respects the planet as much as it respects your skin. This is more than lip care — it is a sustainable ritual built on transparency and trust.</p>
+      <p>Our paper-base & biodegradable bags ensure every order respects the planet as much as it respects your skin. This is more than lip care, it is a sustainable ritual built on transparency and trust.</p>
       <div class="about-values">
         <div class="value-item"><h4>Transparency</h4><p>We tell you exactly what's in every tube and why it's there.</p></div>
         <div class="value-item"><h4>Inclusivity</h4><p>WORBS for every shade, every skin type, every story.</p></div>
@@ -398,7 +394,7 @@
     </div>
     <div class="team-card"><div class="team-avatar">👩🏾</div><div class="team-name">Dorothy Worbie</div><div class="team-role">Creative Director · Founder</div></div>
     <div class="team-card"><div class="team-avatar">👩🏽</div><div class="team-name">Head of Product</div><div class="team-role">Chemist · Skincare Expert</div></div>
-    <div class="team-card"><div class="team-avatar">👩🏿</div><div class="team-name">Rasmiah Owoor</div><div class="team-role">Brands, Promotions & Marketing</div></div>
+    <div class="team-card"><div class="team-avatar">👩🏿</div><div class="team-name">Rasmiah Owoo</div><div class="team-role">Brands, Promotions & Marketing</div></div>
   </div>
 </div>
 
@@ -406,7 +402,7 @@
 <div id="page-blog" class="page">
   <section class="section">
     <p class="section-label">WB Journal</p>
-    <h2 class="section-title">Beauty Knowledge,<br>Beautifully Told</h2>
+    <h2 class="section-title">Beauty,<br>Retold.</h2>
     <div class="blog-grid" id="all-blogs"></div>
   </section>
 </div>
@@ -431,7 +427,7 @@
       <div class="contact-info">
         <p class="section-label">Get in Touch</p>
         <h3>We'd love to<br>hear from you.</h3>
-        <p>Have a question about a product, your order, or just want advice? Our team is happy to help — reach out and we'll get back to you as soon as possible.</p>
+        <p>Have a question about a product, your order, or just want advice? Our team is happy to help! Reach out and we'll get back to you as soon as possible.</p>
         <div class="contact-detail"><span class="contact-icon">📍</span> Accra, Ghana</div>
         <div class="contact-detail"><span class="contact-icon">📧</span> worbsbeauty@gmail.com</div>
         <div class="contact-detail"><span class="contact-icon">💬</span> WhatsApp: +233 245 877 865</div>
@@ -464,12 +460,12 @@
   </section>
 </div>
 
-<!-- FIX 5: SHIPPING INFO PAGE -->
+<!--  SHIPPING INFO PAGE -->
 <div id="page-shipping" class="page">
   <div class="info-page">
     <p class="section-label">Help</p>
     <h2>Shipping Information</h2>
-    <p class="info-intro">We deliver across Ghana with care and speed. All orders are packaged in our signature eco-conscious mailers to keep your products safe and our planet happier.</p>
+    <p class="info-intro">We deliver across Ghana with care and speed. All orders are packaged in our signature eco-conscious bags to keep your products safe and our planet happier.</p>
 
     <div class="info-section">
       <h3>Delivery Days</h3>
@@ -496,7 +492,7 @@
 
     <div class="info-section">
       <h3>Packaging</h3>
-      <p>All W O R B S orders are shipped in biodegradable mailers and paper-base bags as part of our commitment to sustainability. Your products will be nestled securely inside. If you're sending a gift, let us know via WhatsApp and we'll add a personalised note at no extra charge.</p>
+      <p>All W O R B S orders are shipped in biodegradable and paper-base bags as part of our commitment to sustainability. Your products will be nestled securely inside. If you're sending a gift, let us know via WhatsApp and we'll add a personalised note at no extra charge.</p>
     </div>
 
     <div class="info-section">
@@ -513,7 +509,7 @@
   </div>
 </div>
 
-<!-- FIX 5: RETURNS POLICY PAGE -->
+<!-- RETURNS POLICY PAGE -->
 <div id="page-returns" class="page">
   <div class="info-page">
     <p class="section-label">Help</p>
@@ -557,7 +553,7 @@
   </div>
 </div>
 
-<!-- FIX 5: FAQs PAGE -->
+<!-- FAQs PAGE -->
 <div id="page-faqs" class="page">
   <div class="info-page">
     <p class="section-label">Help</p>
@@ -567,9 +563,9 @@
     <div class="info-section">
       <h3>Products</h3>
       <ul>
-        <li><strong>Are your products safe for sensitive skin?</strong> — Yes! Our formulas are dermatologist-tested and free from parabens, sulfates, and harsh dyes. That said, if you have a known allergy, please check the ingredient list for your specific product or ask us.</li>
+        <li><strong>Are your products safe for sensitive skin?</strong> — Yes! Our formulas are tested and free from parabens, sulfates, and harsh dyes. That said, if you have a known allergy, please check the ingredient list for your specific product or ask us.</li>
         <li><strong>Are W O R B S products cruelty-free?</strong> — Absolutely. We do not test on animals and never will.</li>
-        <li><strong>How long do the glosses last on the lips?</strong> — Typically 2–4 hours with normal wear. Layering over WB Lip Butta can extend wear. Eating and drinking will reduce longevity (as with any lip product).</li>
+        <li><strong>How long do the glosses last on the lips?</strong> — Typically 1–2 hours with normal wear. Layering over WB Lip Butta can extend wear. Eating and drinking will reduce longevity (as with any lip product).</li>
         <li><strong>What's the shelf life of your products?</strong> — 12 months unopened, 6 months after opening. Store in a cool, dry place away from direct sunlight.</li>
         <li><strong>Can I layer ROGUE over ROSÉ?</strong> — Yes! Layering our glosses is encouraged. Start with a lighter shade as base and build depth with ROGUE on top for a custom ombré effect.</li>
       </ul>
@@ -650,7 +646,7 @@
     <div class="footer-col">
       <h4>Help</h4>
       <ul>
-        <!-- FIX 5: All three links now navigate to real pages with content -->
+       
         <li><a onclick="showPage('shipping')">Shipping Info</a></li>
         <li><a onclick="showPage('returns')">Returns Policy</a></li>
         <li><a onclick="showPage('faqs')">FAQs</a></li>
@@ -704,23 +700,21 @@
 <script>
 const WHATSAPP = '233245877865';
 
-// FIX 6: All products now have an `images` array for multi-image support.
-// Add more image paths to any product's images array as you add photos.
-// The modal carousel will automatically show navigation arrows when images.length > 1.
+
 const products = [
   {
     id:'CLR-01', name:'CLEAR', tagline:'Clear · High Shine', price:85, category:'Lips', badge:'Bestseller', color:'#ffd6e0',
-    images: ['images/clear.jpg', 'images/clear-2.jpg'],
+    images: ['images/clearr.png', 'images/clear-2.jpg'],
     desc:'High-shine, high-depth: A crystal-clear, clean formula designed for maximum impact with a minimalist touch.'
   },
   {
     id:'RSE-01', name:'ROSÉ', tagline:'Soft Flush · High Shine', price:85, category:'Lips', badge:'New', color:'#ffe0ec',
-    images: ['images/rose.jpg', 'images/rose-2.jpg'],
+    images: ['images/rosee.jpg', 'images/rose-2.jpg'],
     desc:'A minimalist, clean flush of pink that turns a subtle glow into a sophisticated statement.'
   },
   {
     id:'RGE-01', name:'ROGUE', tagline:'Bold · Stained', price:85, category:'Lips', badge:'New', color:'#ffc8d8',
-    images: ['images/rogue.jpg', 'images/rogue-2.jpg'],
+    images: ['images/rogue.png', 'images/rogue-2.jpg'],
     desc:'A bold, clean-formula statement shade designed for those who lead, never follow.'
   },
   {
@@ -735,7 +729,7 @@ const products = [
   },
   {
     id:'WB-SM', name:'WB Lip Serum', tagline:'Nourishing · In-depth', price:65, category:'Lip Treatment', badge:null, color:'#ffe0ec',
-    images: ['images/lip-sr.jpg', 'images/lip-sr-2.jpg'],
+    images: ['images/lip-sr.jpg', 'images/lip-sr-1.jpg'],
     desc:'A blend of clean ingredients and conscious craft, designed to protect your smile.'
   },
   {
@@ -761,7 +755,7 @@ const blogs = [
     title: "The Rogue Chapter: Why We're Choosing Boldness This Season.",
     category: 'The Launch Series',
     date: 'Feb 25, 2026',
-    image: 'images/launch.jpg',
+    image: 'images/R O G U E The final Shade.jpg',
     emoji: '🍒',
     excerpt: "Red is not just a color — it's a decision. Discover the intentional craft behind ROGUE, our boldest statement yet, designed for those who lead with depth.",
     content: `
@@ -773,14 +767,14 @@ const blogs = [
       <h3>Wear ROGUE Your Way</h3>
       <p>Pair ROGUE with your WB Lipliners for precise edges and longer wear. Layer over WB Lip Butta on days when your lips need extra care. Or wear it solo — straight from the tube, unapologetic. There's no wrong way to be bold.</p>
       <div class="article-pullquote">"ROGUE is not a color. It's a closing argument."</div>
-      <p>This is the final shade of the Trilogy — and we think it might be the most important one. Not because red is rare, but because deciding you deserve it is. Wear it like you mean it.</p>
+      <p>This is the final shade of the Trilogy, and we think it might be the most important one. Not because red is rare, but because deciding you deserve it is. Wear it like you mean it.</p>
     `
   },
 ];
 
 let cart = [];
 
-// FIX 6: renderProductCard now shows image count badge if product has multiple images
+// renderProductCard to show image count badge if product has multiple images
 function renderProductCard(p) {
   const imgCount = p.images ? p.images.length : (p.image ? 1 : 0);
   const firstImg = p.images ? p.images[0] : (p.image || null);
@@ -835,7 +829,7 @@ function showPage(page) {
   document.getElementById('cart-overlay').classList.remove('open');
 }
 
-// FIX 3: filterShop correctly filters by exact category, then shows shop page
+// filterShop correctly filtering by exact category, then shows shop page
 function filterShop(category) {
   const filtered = products.filter(p => p.category === category);
   document.getElementById('shop-products').innerHTML =
@@ -923,7 +917,7 @@ function checkoutWhatsApp() {
   window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
-// FIX 6: Modal carousel — fully supports multiple images per product
+// Modal carousel — fully supports multiple images per product
 let currentImageIndex = 0;
 let currentImages = [];
 
@@ -959,7 +953,7 @@ function openModal(id) {
   const modalImg = document.getElementById('modal-img');
   modalImg.style.background = p.color;
   modalImg.style.position = 'relative';
-  // FIX 6: Use images array; fall back to single image or empty
+  //  Use images array; fall back to single image or empty
   currentImages = p.images ? [...p.images] : (p.image ? [p.image] : []);
   currentImageIndex = 0;
   renderModalImage();
