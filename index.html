@@ -28,10 +28,7 @@
 
   /*  Logo now uses image file — place FULL_WORBS_LOGO_BOLD1.jpg in same folder as index.html */
   .nav-logo { cursor: pointer; display: flex; align-items: center; }
-  .nav-logo img { height: 28px; width: auto; filter: invert(18%) sepia(50%) saturate(800%) hue-rotate(300deg) brightness(60%); transition: opacity 0.2s; }
-  .nav-logo img:hover { opacity: 0.75; }
-  /* Fallback text if image not found */
-  .nav-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; letter-spacing: 0.35em; font-weight: 400; color: var(--mocha); line-height: 1; display: none; }
+.nav-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; letter-spacing: 0.35em; font-weight: 400; color: var(--mocha); line-height: 1; display: block; }
 
   .nav-links { display: flex; gap: 36px; list-style: none; }
   .nav-links a { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); text-decoration: none; font-weight: 400; transition: color 0.2s; cursor: pointer; }
@@ -260,14 +257,12 @@
 <body>
 
 <!-- NAV -->
-  <nav>
-<div class="nav-logo" onclick="resetShop()" style="cursor: pointer;">
-    <span class="nav-logo-text" style="font-size: 72px; font-weight: 900; letter-spacing: 2px;">W O R B S</span>
-</div>
-<ul class="nav-links">
+<nav>
+  <div class="nav-logo" onclick="resetShop()" style="cursor: pointer;">
+    <span class="nav-logo-text">W O R B S</span>
+  </div>
+  <ul class="nav-links">
     <li><a onclick="showPage('home')">Home</a></li>
-  
-    <!-- Shop nav link now calls resetShop() to always show all products -->
     <li><a onclick="resetShop()">Shop</a></li>
     <li><a onclick="showPage('about')">About</a></li>
     <li><a onclick="showPage('blog')">Journal</a></li>
